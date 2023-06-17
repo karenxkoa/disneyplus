@@ -1,0 +1,138 @@
+body{
+    background-color: #535560;
+}
+    
+.buttons{                                                             /* Esta sección fue hecha únicamente para */
+    padding: 2rem;                                                    /* poder desplegar los botones en la      */
+    padding-top: 6rem;                                                /* página en blanco. Puede ser eliminada  */
+    flex-direction: column-reverse;                                   /* eventualmente.                         */
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile{                                                              /* Botón perfiles                        */ 
+    background-color: #42414B;                                       
+    color: #FFFFFF;                                                  
+    padding: 0.5rem;
+    border: none;                                                         
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.profile:hover{                                                         /* Hover del botón perfiles             */
+    background-color: #484A54;
+    box-shadow: 0rem, 0.25rem, 1.5rem, rgba(0,0,0,0.16);
+}
+
+.stream{                                                                /* Botones relacionados con el stream:  */
+    background-color: #0072D7;                                        /* Start stream, leave, copy link, done */
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5rem;
+    border-width: 0.5em;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+
+}
+
+.stream:hover{                                                          /* Hover de los botones de stream       */
+    background-color: #0481EE;
+}
+
+.play{                                                                  /* Botones de play y cancelar video     */
+    background-color: #FAF8FC;
+    color: #000000;
+    padding: 0.5rem;
+    border: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+    box-shadow: 0rem, 0.06rem, 0.25rem, rgba(2,4,80,0.2);
+}
+
+.play:hover{                                                            /* Hover de los botones de play         */
+    background-color: #A4A4A7;
+    box-shadow: 0rem, 0.25rem, 1.5rem, rgba(0,0,0,0.16);
+}
+
+.bnw{                                                                   /* Botones trailer y groupwatch:        */
+    background-color: #FAF8FC;                                        /* Tienen este nombre de clase          */
+    color: #040408;                                                   /* por estar en blanco y negro.         */
+    padding: 0.5rem;                                            
+    border: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+    box-shadow: 0rem, 0.06rem, 0.25rem, rgba(2,4,80,0.2);
+}
+
+.bnw:hover{                                                              /* Hover de los botones blanco y negro  */
+    background-color: #1A1D29;
+    color: #ffffff;
+    border: 0.5px solid #FBFBF9;
+    border-radius: 3px;
+}
+
+.reset{                                                                  /* Botón reset defaults                 */
+    background-color: #333233;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    border: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+    box-shadow: 0rem, 0.06rem, 0.25rem, rgba(2,4,80,0.2);
+}
+
+.reset:hover{                                                              /* Hover del botón reset              */
+    border: 1px solid #FBFBF9;
+    border-radius: 3px;
+}
+
+.cancel{                                                                   /* Botón cancelar                   */
+    background-color: #42414B;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    border: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+    box-shadow: 0rem, 0.06rem, 0.25rem, rgba(2,4,80,0.2);
+}
+
+.movie-hor{                                                                 /* Botón película horizontal (Red)  */
+    
+    border: none;
+    width: 268px;
+    height: 158px;
+    background: no-repeat center/100% url(red.jpg);                         /* Para centrar la imagen           */
+    filter: drop-shadow(0px 30px 30px rgba(0, 0, 0, 0.3));
+}
+
+.movie-hor:hover{                                                           /* Hover película horizontal        */
+    border: 4.5px solid rgba(251, 251, 249, 0.7);
+    border-radius: 5px;
+}
+
+.movie-ver{                                                                 /* Botón película vertical (Brave)  */
+    
+    border: none;
+    width: 202px;
+    height: 268px;
+    background: no-repeat center/100% url(brave.jpg);
+    filter: drop-shadow(0px 16px 13px rgba(0, 0, 0, 0.3));
+}
+
+.movie-ver:hover{                                                           /* Hover película vertical (Brave)  */
+    border: 4.5px solid rgba(251, 251, 249, 0.7);
+    border-radius: 5px;
+}
