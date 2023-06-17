@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" href="img/disneyplus.png"/>
+    <title>Disney+ | Watchlist</title>
+    <link rel="stylesheet" href="watchlist_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MR2LJ2ZPWT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MR2LJ2ZPWT');
+    </script>
+
+    <!-- Paste this right before your closing </head> tag MIXPANEL-->
+    <script type="text/javascript">
+    (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+    for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+    MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+    </script>
+</head>
+<body>
+    <!--Barra de navegación: botones destacables y acordeón de perfiles de usuario.------->
+    <header>
+        <nav class="menu">
+            <button id="logo" type="button"><img src="img/disneyplus.png" alt="Disney+" height="42px" width="76.4px"></button>
+            <button type="button"><img src="img/Home.png" id="icon" ><a href="..\Home\Home.html">HOME</a></button>
+            <button type="button"><img src="img/Search.png" id="icon"><a href="..\Search\search.html">SEARCH</a></button>
+            <button type="button"><img src="img/watchlist.png" id="icon"><a href="Watchlist.html">WATCHLIST</a></button> <!--Insertar link entre las comillas de la etiqueta a href-->
+            <button type="button"><img src="img/ORIGINALES.png" id="icon"><a href="..\Originals\originals.html">ORIGINALS</a></button>
+            <button type="button"><img src="img/PELICULAS.png" id="icon"><a href="..\Movies\movies.html">MOVIES</a></button>
+            <button type="button"><img src="img/SERIES.png" id="icon"><a href="..\Series\series.html">SERIES</a></button> <!--Insertar link entre las comillas de la etiqueta a href-->
+        </nav>
+        <!--Creamos un acordeón con dos contenedores (perfiles y configuraciones).------->        
+        <div class="profile"> <!--El perfil que ve el usuario actual.------->
+            <!--Panel para los otras cuentas de usuario.------->
+            <li><button class="accordion" type="button">Val<img id="pic" src="img/stitch.png" alt="Profile" height="20px" width="20px"></button>
+                <ul>
+                    <li><button id="name" type="button"><a href=""><img id="pic" src="img/doug.png" alt="Profile">Ale</a></button></li>
+                    <li><button id="name" type="button"><a href><img id="pic" src="img/violet.png" alt="Profile">Karen</a></button></li>
+                    <li><button id="name" type="button"><a href><img id="pic" src="img/add.png" alt="Profile">Add profile</a></button></li>
+                    <li><button id="edit" type="text"><a href>Edit profiles</a></button></li>
+                    <li><button id="settings" type="text"><a href>App settings</a></button></li>
+                    <li><button id="account" type="text"><a href>Account</a></button></li>
+                    <li><button id="help" type="text"><a href="https://help.disneyplus.com/csp">Help</a></button></li>
+                    <li><button id="logout" type="text"><a href="..\Home\Home.html">Log out</a></button></li>
+                </ul>
+            </li>  <!--NOTA: Estos paneles NO son visibles desde HTML, hasta ser implementado en JS.------->
+        </div>
+    </header>
+
+
+        <div class="title">
+        <br>Watchlist</br>
+       </div>
+        <div class="subtitle">
+        <br>Mis películas y series </br>
+        </div>
+
+
+        <div class="series">
+            <button id="miley" type="button" class="banner">
+            </button>
+            <button id="turningred" type="button" class="banner">
+            </button>
+            <button id="gravityfalls" type="button" class="banner"> 
+            </button>
+            <button id="malcom" type="button" class="banner">
+            </button>
+        </div>
+
+        
+  
+</body>
+<footer>
+    <img id="disney" src="img/disneyplus.png" width="82px" height="44px">
+    <ul class="user">
+            <li id="link"><a href="https://www.disneyplus.com/legal/privacy-policy">Privacy Policy</a></li>
+            <li id="link"><a href="https://www.disneyplus.com/legal/privacy-notice">Privacy Notice</a></li>
+            <li id="link"><a href="https://www.disneyplus.com/legal/subscriber-agreement">Subscriber Agreement</a></li>
+            <li id="link"><a href="https://help.disneyplus.com/csp">Help</a></li>
+            <li id="link"><a href="https://help.disneyplus.com/csp?id=csp_article_content&article=devices-supported">Supported Devices</a></li>
+    </ul>
+    <ul class="about">
+        <li id="link"><a href="https://help.disneyplus.com/csp?id=csp_article_content&article=introduction">About Us</a></li>
+        <li id="link"><a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=disneyplusemea01&type=disneyplusemea">Interest-based Ads</a></li>
+    </ul>
+    <ul class="info">
+            The Disney+ service is marketed by WDC (MEXICO), S DE R.L. DE C.V. Periférico Sur 3299, 11th floor, Colonia Fuentes del Pedregal, Tlalpan Mayor's Office, 14140, CDMX and RFC number WME920221837.
+    </ul>
+    <ul class="copyright">
+            © Disney. All rights deserved.
+    </ul>
+</footer>
+</html>
+
+
+
+
+

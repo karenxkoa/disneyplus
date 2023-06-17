@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    min-height: 82px;
+    background-color: #151722;
+    filter: drop-shadow(0px 30px 30px rgba(0, 0, 0, 0.3));
+}
+
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: initial;
+    margin: 0;
+}
+
+nav button {
+    color:#FAF8FC;
+    font-family: Montserrat;
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 1.42px;
+    margin: 15px 30px 15px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav button:hover{
+    text-decoration: underline;
+}
+
+#icon{
+    margin-right: 10px;
+}
+
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.profile{
+    width: 20%;
+    min-width:150px;
+    padding: 0;
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px 50px;
+}
+
+
+ul, li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+   
+}
+
+.profile li a{
+    background-color:#151722;
+    color: #FAF8FC;
+    min-width: 150px;
+    text-decoration: none;
+    padding: 18px 10px;
+    display: block;
+}
+
+.profile li a:hover{
+    background-color: #0E0F15;
+}
+
+.profile li ul{
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.profile li:hover > ul{
+    display: hidden;
+}
+
+.profile button{
+    border: none;
+    background: none;
+    color:#FAF8FC;
+    padding: 0;
+    font-family: Montserrat;
+    text-align: justify;
+    font-weight: 600;
+}
+
+
+.accordion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.accordion ul li #pic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#pic{                                       /*Foto de perfil*/
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    float: right;
+}
+
+.title{                                     /*Nombre de la página*/
+    color: #f9f9f9;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding-left: 114px;
+    font-size: 44px;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 0px;
+    padding-top:10;   
+    flex-direction: row;                                                                                                                              
+    align-content: left;
+    
+}
+
+.subtitle{
+    color: #f9f9f9;
+    font-family: Montserrat;
+    font-weight: 400px;
+    padding-left: 114px;
+    font-size: 20px;
+    letter-spacing: .11px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: initial;
+    line-height: 14px;
+    align-content: left;
+}
+
+
+
+body{
+    padding: 0rem;
+    margin: 0rem;
+    background-color: #1a1d29;
+    font-family: Montserrat;
+    padding: 0em;
+    margin: 0em;
+}
+
+
+
+/********ESTILOS DE LA LISTA DE PELICULAS****************/
+
+.series{
+    padding: 1.5rem;                                                                                                                                   
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    padding-left: 114px;
+    border-radius: 4px;
+}
+
+.banner{
+    border: none;
+    width: 268px;
+    height: 158px;
+    filter: drop-shadow(0px 16px 13px rgba(0, 0, 0, 0.3));
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 9.5px;
+}
+
+#miley{
+    background: no-repeat center/100% url(miley.jpeg);
+}
+#turningred{
+    background: no-repeat center/100% url(turningred_disneyplus.jpeg);
+}
+#gravityfalls{
+    background: no-repeat center/100% url(gravityfalls_disneyplus.jpeg);
+}
+#malcom{
+    background: no-repeat center/100% url(malcom.jpeg);
+}
+
+.banner:hover{
+    border: 4.5px solid rgba(251, 251, 249, 0.7);
+    border-radius: 4px;
+}
+
+/*********************************************************************************************************************************/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #151722;
+    color: #FFFFFF;
+    height: 278px;
+    width: auto;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5em 5em 1.5em 1.5em;
+}
+
+a{
+    color: #FFFFFF;
+}
+
+.user{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+#link{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.about{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+

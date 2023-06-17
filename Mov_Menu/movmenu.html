@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" href="img/disneyplus.png"/>
+    <title>Disney+ | Turning Red</title>
+    <link rel="stylesheet" href="movmenustyles.css">
+</head>
+<body>
+      <!--Barra de navegación: botones destacables y acordeón de perfiles de usuario.------->
+      <nav class="header">
+        <button id="logo" type="button" class="head-bttn"> <img src="img/disneyplus.png" alt="Disney+" height="42px" width="76.4px"></button>
+        <button type="button" class="head-bttn"><img src="img/Home.png" id="icon" ><a href="Home\home.html"></a>HOME</button>
+        <button type="button" class="head-bttn"><img src="img/Search.png" id="icon"><a href="Search\search.html"></a>SEARCH</button>
+        <button type="button" class="head-bttn"><img src="img/watchlist.png" id="icon"><a href="Watchlist\Watchlist.html">WATCHLIST</a></button> <!--Insertar link entre las comillas de la etiqueta a href-->
+        <button type="button" class="head-bttn"><img src="img/ORIGINALES.png" id="icon">ORIGINALS</button>
+        <button type="button" class="head-bttn"><img src="img/PELICULAS.png" id="icon"><a href="Movies\movies.html"></a>MOVIES</button>
+        <button type="button" class="head-bttn"><img src="img/SERIES.png" id="icon"><a href="Series\series.html"></a>SERIES</button> <!--Insertar link entre las comillas de la etiqueta a href-->
+        <!--Creamos un acordeón con dos contenedores (perfiles y configuraciones).------->        
+        <div class="profile"> <!--El perfil que ve el usuario actual.------->
+            <button class="accordion" type="button">Val<img id="pic" src="img/stitch.png" alt="Profile" height="20px" width="20px"></button>
+            <div class="panel"> <!--Panel para los otras cuentas de usuario.------->
+                <button id="name" type="button"><img id="pic" src="img/doug.png" alt="Profile">Ale</button>
+                <button id="name" type="button"><img id="pic" src="img/violet.png" alt="Profile">Karen</button>
+                <button id="name" type="button"><img id="pic" src="img/add.png" alt="Profile">Add profile</button>
+            </div>
+            <div class="panel"> <!--Panel para las configuraciones.------->
+                <button id="edit" type="text">Edit profiles</button>
+                <button id="settings" type="text">App settings</button>
+                <button id="account" type="text">Account</button>
+                <button id="help" type="text">Help</button>
+                <button id="logout" type="text">Log out</button>
+            </div> <!--NOTA: Estos paneles NO son visibles desde HTML, hasta ser implementado en JS.------->
+        </div>
+    </nav>
+
+    <div class="info">
+        <img id="png" src="img/turningred.png">
+    
+        <div class="mov-play">
+        <button id="play"
+                type="button"
+                class="play">► PLAY</button>                               <!--Botón play ------------>
+        <button id="trailer"
+                type="button"
+                class="bnw">TRAILER</button>                               <!--Botón trailer --------->
+    </div>
+    </div>
+</body>
+</html>

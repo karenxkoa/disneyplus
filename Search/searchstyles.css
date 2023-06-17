@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    min-height: 82px;
+    background-color: #151722;
+    filter: drop-shadow(0px 30px 30px rgba(0, 0, 0, 0.3));
+}
+
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: initial;
+    margin: 0;
+}
+
+nav button {
+    color:#FAF8FC;
+    font-family: Montserrat;
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 1.42px;
+    margin: 15px 30px 15px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav button:hover{
+    text-decoration: underline;
+}
+
+#icon{
+    margin-right: 10px;
+}
+
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.profile{
+    width: 20%;
+    min-width:150px;
+    padding: 0;
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px 50px;
+}
+
+
+ul, li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+   
+}
+
+.profile li a{
+    background-color:#151722;
+    color: #FAF8FC;
+    min-width: 150px;
+    text-decoration: none;
+    padding: 18px 10px;
+    display: block;
+}
+
+.profile li a:hover{
+    background-color: #0E0F15;
+}
+
+.profile li ul{
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.profile li:hover > ul{
+    display: hidden;
+}
+
+.profile button{
+    border: none;
+    background: none;
+    color:#FAF8FC;
+    padding: 0;
+    font-family: Montserrat;
+    text-align: justify;
+    font-weight: 600;
+}
+
+
+.accordion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.accordion ul li #pic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#pic{                                       /*Foto de perfil*/
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    float: right;
+}
+
+/*********************************************************************************************************************/
+body {
+    background-color: #1A1D29;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 0em;
+    margin: 0em;
+}
+
+.search{
+    height: 111px;
+    background: linear-gradient(180deg, #151722 0%, #42414B 100%);
+}
+
+.searchbar{
+    width: 100%;
+    height: 111px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:#FFFFFF;
+    font-family: Montserrat;
+    font-weight: 650;
+    font-size: 48px;
+    line-height: 75px;
+    margin-left: 70px;
+}
+
+.searchbar:hover{
+    color: #FFFFFF;
+}
+
+h5{                                     /*Nombre de la página*/
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding-left: 3.5rem;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: initial;
+}
+
+.explore{
+    padding: 0 1.5rem 1.5rem 1.5rem;                                                                                                                                   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 50px 50px; 
+    position: relative;
+    z-index: 2;
+}
+
+.explore::after{
+    content: "";
+    width: 285px;
+}
+
+.banner{
+    border: none;
+    width: 268px;
+    height: 158px;
+    background: no-repeat center/100% url(img/red.jpg);                         /* Para centrar la imagen           */
+    filter: drop-shadow(0px 30px 30px rgba(0, 0, 0, 0.3));
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 9.5px;
+}
+
+.banner:hover{
+    border: 4.5px solid rgba(251, 251, 249, 0.7);
+    border-radius: 5px;
+}
+
+#red{
+    background: no-repeat center/100% url(img/amphibia.jpg);
+}
+#zootopia{
+    background: no-repeat center/100% url(img/zootopia.jpg);
+}
+#tangled{
+    background: no-repeat center/100% url(img/tangled.jpg);
+}
+#flubber{
+    background: no-repeat center/100% url(img/clubhouse.jpg);
+}
+#beauty{
+    background: no-repeat center/100% url(img/beauty.jpg);
+}
+#bighero{
+    background: no-repeat center/100% url(img/dino.jpg);
+}
+#cinderella{
+    background: no-repeat center/100% url(img/cinderella.jpg);
+}
+#aladdin{
+    background: no-repeat center/100% url(img/funhouse.jpg);
+}
+#elton{
+    background: no-repeat center/100% url(img/elton.jpg);
+}
+#lilo{
+    background: no-repeat center/100% url(img/lilo.jpg);
+}
+#narnia{
+    background: no-repeat center/100% url(img/moonknight.jpg);
+} 
+#encanto{
+    background: no-repeat center/100% url(img/msmarvel.jpg);
+}
+#tiana{
+    background: no-repeat center/100% url(img/tiana.jpg);
+}
+#bluey{
+    background: no-repeat center/100% url(img/scale.jpg);
+}
+#secrets{
+    background: no-repeat center/100% url(img/secrets.jpg);
+}
+#hulk{
+    background: no-repeat center/100% url(img/shehulk.jpg);
+}
+
+/**********************************************************************************************************************/
+footer{
+    background-color: #151722;
+    color: #FFFFFF;
+    height: 278px;
+    width: auto;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5em 5em 1.5em 1.5em;
+}
+
+a{
+    color: #FFFFFF;
+}
+
+.user{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+#link{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.about{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}

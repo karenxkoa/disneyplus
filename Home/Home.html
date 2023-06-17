@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" href="img/disneyplus.png"/>
+    <title>Disney+ | Home</title>
+    <link rel="stylesheet" href="homestyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MR2LJ2ZPWT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MR2LJ2ZPWT');
+    </script>
+
+    <!-- Paste this right before your closing </head> tag MIXPANEL-->
+    <script type="text/javascript">
+    (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+    for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+    MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+    </script>
+</head>
+
+<body>
+
+    <!-- Este es el contenedor de todo https://www.espai.es/blog/2020/11/como-hacer-un-slider-solo-con-html-y-css/ ese es un link para seguir armando el banner 
+    https://www.youtube.com/watch?v=F7Mi1c3DFBs BANNER CON JS
+    -->
+  
+    <header>
+        <nav class="menu">
+            <button id="logo" type="button"><img src="img/disneyplus.png" alt="Disney+" height="42px" width="76.4px"></button>
+            <button type="button"><img src="img/Home.png" id="icon" ><a href="Home.html">HOME</a></button>
+            <button type="button"><img src="img/Search.png" id="icon"><a href="..\Search\search.html">SEARCH</a></button>
+            <button type="button"><img src="img/watchlist.png" id="icon"><a href="..\Watchlist\Watchlist.html">WATCHLIST</a></button> <!--Insertar link entre las comillas de la etiqueta a href-->
+            <button type="button"><img src="img/ORIGINALES.png" id="icon"><a href="..\Originals\originals.html">ORIGINALS</a></button>
+            <button type="button"><img src="img/PELICULAS.png" id="icon"><a href="..\Movies\movies.html">MOVIES</a></button>
+            <button type="button"><img src="img/SERIES.png" id="icon"><a href="..\Series\series.html">SERIES</a></button> <!--Insertar link entre las comillas de la etiqueta a href-->
+        </nav>
+        <!--Creamos un acordeón con dos contenedores (perfiles y configuraciones).------->        
+        <div class="profile"> <!--El perfil que ve el usuario actual.------->
+            <!--Panel para los otras cuentas de usuario.------->
+            <li><button class="accordion" type="button">Val<img id="pic" src="img/stitch.png" alt="Profile" height="20px" width="20px"></button>
+                <ul>
+                    <li><button id="name" type="button"><a href=""><img id="pic" src="img/doug.png" alt="Profile">Ale</a></button></li>
+                    <li><button id="name" type="button"><a href><img id="pic" src="img/violet.png" alt="Profile">Karen</a></button></li>
+                    <li><button id="name" type="button"><a href><img id="pic" src="img/add.png" alt="Profile">Add profile</a></button></li>
+                    <li><button id="edit" type="text"><a href>Edit profiles</a></button></li>
+                    <li><button id="settings" type="text"><a href>App settings</a></button></li>
+                    <li><button id="account" type="text"><a href>Account</a></button></li>
+                    <li><button id="help" type="text"><a href="https://help.disneyplus.com/csp">Help</a></button></li>
+                    <li><button id="logout" type="text"><a href="..\Home\Home.html">Log out</a></button></li>
+                </ul>
+            </li>  <!--NOTA: Estos paneles NO son visibles desde HTML, hasta ser implementado en JS.------->
+        </div>
+    </header>
+
+   <!-- CARRUSEL NO.2 AQUÍ <div class="contenedor-full">
+
+    <div class="slider-container">  Este contenedor guarda todas las imagenes del slider
+
+        <div class="banner banner--show" data-id="1">
+
+            <img class="ban" src="IMG/mandalorian.jpg" alt="novedad" id="before">
+            <h2 class="subtitle"> New Chapter every Wednesday </h2>
+            
+           <figure>
+
+            <img class="logo-slider" src="IMG/mandalorian-banner-text.png" class="logo-movie">
+
+           </figure>
+
+           <div class="slider-buttom-1" id="before"></div>
+           <div class="slider-buttom-2" id="before"></div>
+           <div class="slider-buttom-3" id="before"></div>
+           <div class="slider-buttom-4" id="before"></div>
+           <div class="slider-buttom-5" id="before"></div>
+           <div class="slider-buttom-6" id="before"></div>
+           <div class="slider-buttom-7" id="before"></div>
+        
+        
+        </div>
+
+    </div>
+
+    <div class="slider-container"> Este contenedor guarda todas las imagenes del slider
+        <div class="banner" data-id="2">
+
+            <img class="ban" src="IMG/spiderman.jpg" alt="novedad" id="before">
+
+            <figure>
+
+                <img class="logo-slider" src="IMG/spider-banner-text.png" class="logo-movie">
+                
+            </figure>
+        
+        </div> 
+
+    </div>
+
+        <div class="slider-container"> Este contenedor guarda todas las imagenes del slider
+
+        <div class="banner" data-id="3">
+
+            <img class="ban" src="IMG/Miley.jpg" alt="novedad" id="before">
+
+            <figure>
+
+                <img class="logo-slider" src="IMG/miley_banner_text.png" class="logo-movie">
+                
+            </figure>
+        
+        </div>
+
+    </div>
+
+      </div>   -->
+
+<!-- CARRUSEL NO.2 AQUÍ  -->
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+      <img src="img/matilda.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="img/guardians2.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="img/maggie.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="img/edsheeran.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="img/intertwined.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="img/guardians3.png" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- The dots/circles -->
+    <div class="slider-buttom">
+
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+    </div>
+
+</div>
+ 
+  
+  
+<!--AQUÍ TERMINA EL SLIDER NO.2 -->     
+                
+
+
+        <div class="lista-canales">
+
+
+
+            <!-- Este es Canal Disney  -->
+
+
+            <div class="content">
+
+                <div class="imagen">
+
+                    <img src="img/Disney.png" alt="canal">
+
+                    <!-- <video class="hover-img" loop autoplay playsinline>
+        
+        <source src= "https://vod-bgc-sa-east-1.media.dssott.com/bgui/ps01/disney/bgui/2019/08/01/1564674844-disney.mp4" type="video/mp4">
+        
+    </video> -->
+
+                    <!-- Este es Canal Pixar  -->
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="imagen">
+
+                    <img src="img/Pixar.png" alt="canal">
+
+
+                    <!-- Este es canal Marvel -->
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="imagen">
+
+                    <img src="img/Marvel.png" alt="canal">
+
+                    <!-- Este es canal Star Wars  -->
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="imagen">
+
+                    <img src="img/StarWars.png" alt="canal">
+
+                    <!-- Este es canal National -->
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="imagen">
+
+                    <img src="img/NationalGeograpic.png" alt="canal">
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="scrollbox">
+            <h2>LGBT+ Voices</h2>
+            <h3>We are glad to celebrate Pride Month with you! </h3>
+            <div class="scroller">
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/shehulk.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/msmarvel.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/owlhouse.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/willow.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/deadpool.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/mulan.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/scale.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/encanto.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/elton.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/red.jpg"></button></div>
+            </div>
+    
+            <h2>Featured</h2>
+            <div class="scroller">
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/amphibia.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/andi.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/andor.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/hawkeye.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/loki.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/malcolm.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/montaner.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/moonknight.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/msmarvel.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/mysteriousben.jpg"></button></div>
+            </div>
+    
+            <h2>Originals</h2>
+            <div class="scroller">
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/aladdin.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/beauty.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/bighero.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/cinderella.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/coco.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/disenchanted.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/encanto.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/flubber.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/lilo.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/maleficent.jpg"></button></div>
+            </div>
+    
+            <h2>Shorts</h2>
+            <div class="scroller">
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/secrets.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/owlhouse.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/puppy.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/raya.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/owlhouse.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/clubhouse.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/dino.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/funhouse.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/elton.jpg"></button></div>
+                <div class="banner"><button id="aladdin" type="button" class="poster"><img src="img/zootopia (2).jpg"></button></div>
+            </div>
+        </div>
+<!--
+        <div class="movies">
+            <button id="red" type="button" class="banner">
+            </button>
+            <button id="zootopia" type="button" class="banner">
+            </button>
+            <button id="tangled" type="button" class="banner"> 
+            </button>
+            <button id="flubber" type="button" class="banner">
+            </button>
+            <button id="beauty" type="button" class="banner"> 
+            </button>
+            <button id="bighero" type="button" class="banner"> 
+            </button>
+            <button id="cinderella" type="button" class="banner">
+            </button>
+            <button id="aladdin" type="button" class="banner"> 
+            </button>
+            <button id="elton" type="button" class="banner"> 
+            </button>
+            <button id="lilo" type="button" class="banner"> 
+            </button>
+            <button id="narnia" type="button" class="banner"> 
+            </button>
+            <button id="gravity" type="button" class="banner"> 
+            </button>
+            <button id="encanto" type="button" class="banner"> 
+            </button>
+            <button id="raya" type="button" class="banner"> 
+            </button>
+            <button id="moana" type="button" class="banner"> 
+            </button>
+            <button id="tiana" type="button" class="banner"> 
+            </button>
+            <button id="disenchanted" type="button" class="banner"> 
+            </button>
+            <button id="maleficent" type="button" class="banner"> 
+            </button>
+            <button id="mulan" type="button" class="banner"> 
+            </button>
+            <button id="coco" type="button" class="banner"> 
+            </button>
+            <button id="toystory" type="button" class="banner"> 
+            </button>
+            <button id="incredibles" type="button" class="banner"> 
+            </button>
+            <button id="incredibles2" type="button" class="banner"> 
+            </button>
+            <button id="deadpool" type="button" class="banner"> 
+            </button>
+        </div>
+-->
+
+        
+   
+
+
+<script src="Home-S.js"> </script>
+
+</body>
+
+<!--Footer: insertamos imagen con isologotipo y tres listas para links e info destacada.------->
+<footer>
+    <img id="disney" src="img/disneyplus.png" width="82px" height="44px">
+    <ul class="user">
+        <li id="link"><a href="https://www.disneyplus.com/legal/privacy-policy">Privacy Policy</a></li>
+        <li id="link"><a href="https://www.disneyplus.com/legal/privacy-notice">Privacy Notice</a></li>
+        <li id="link"><a href="https://www.disneyplus.com/legal/subscriber-agreement">Subscriber Agreement</a></li>
+        <li id="link"><a href="https://help.disneyplus.com/csp">Help</a></li>
+        <li id="link"><a href="https://help.disneyplus.com/csp?id=csp_article_content&article=devices-supported">Supported Devices</a></li>
+    </ul>
+    <ul class="about">
+        <li id="link"><a href="https://help.disneyplus.com/csp?id=csp_article_content&article=introduction">About Us</a></li>
+        <li id="link"><a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=disneyplusemea01&type=disneyplusemea">Interest-based Ads</a></li>
+    </ul>
+    <ul class="info">
+        The Disney+ service is marketed by WDC (MEXICO), S DE R.L. DE C.V. Periférico Sur 3299, 11th floor, Colonia Fuentes del Pedregal, Tlalpan Mayor's Office, 14140, CDMX and RFC number WME920221837.
+    </ul>
+    <ul class="copyright">
+        © Disney. All rights deserved.
+    </ul>
+</footer>
+</html>

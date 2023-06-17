@@ -1,0 +1,85 @@
+body {                                                  /*Estilo general de la página.*/
+    background-color: #1A1D29;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 1em;
+    margin: 0em;
+}
+
+.start{                                                 /*Botones superiores de la página.*/
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#logo{                                                  /*Logotipo.*/
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#edit{                                                  /*Botón EDITAR PERFILES.*/
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 84em;
+}
+
+.profile{                                                /*Botón EDITAR PERFILES.*/
+    background-color: #42414B;                                       
+    color: #FFFFFF;                                                  
+    padding: 0.5rem;
+    border: none;                                                         
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.profile:hover{                                         /* Hover del botón perfiles. */
+    background-color: #484A54;
+    box-shadow: 0rem, 0.25rem, 1.5rem, rgba(0,0,0,0.16);
+}
+
+h4{                                                     /*Texto "Who's watching?"*/
+    font-family: Montserrat;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.options{                                               /*Contenedor de los perfiles.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user{                                                  /*Estilo general de los botones de perfil.*/
+    border:none;
+    background: none;
+    color:#FFFFFF;
+    font-family: Montserrat;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+img{                                                    /*Estilo de las imágenes de perfil.*/
+    border-radius: 50%;
+    border: 2px solid #1A1D29;
+}
+
+img:hover{                                              /*Hover de las imágenes de perfil.*/
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    filter:alpha (opacity=50);
+}
+
+#add{                                                   /*Color de letra del botón Add.*/
+    color: #cccccc;
+}

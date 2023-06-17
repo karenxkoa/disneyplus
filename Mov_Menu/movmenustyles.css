@@ -1,0 +1,146 @@
+.header{
+    background-color: transparent;
+    height: 82px;
+    filter: drop-shadow(0px 30px 30px rgba(0, 0, 0, 0.3));
+    display: flex;
+    justify-content: flex-start;
+    align-items: initial;
+}
+
+.head-bttn{
+    color:#FAF8FC;
+    font-family: Montserrat;
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 1.42px;
+    margin: 15px 30px 15px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.head-bttn:hover{
+    text-decoration: underline;
+}
+
+#icon{
+    margin-right: 10px;
+}
+
+a{
+    color:#FFFFFF;
+}
+
+.profile{                               /*Contenedor del perfil*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion{                             /*Botón acordeón del perfil*/
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-left: 10em;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.panel{                                     /*Panel de opciones oculto*/
+    display: none;
+    overflow: hidden;
+    border: none;
+    background-color: #0E0F15;
+    color: #D9D9D9;    
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
+#pic{                                       /*Foto de perfil*/
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+/******************************************************************************************************************/
+
+body{
+    background-image: url(img/redmovie.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 0em;
+    margin: 0em;
+}
+
+#png{
+    transform: scale(0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.note{
+    transform: scale(0.125);
+}
+
+.play{                                                                  /* Botones de play y cancelar video     */
+    background-color: #FAF8FC;
+    color: #000000;
+    padding: 0.5rem;
+    border: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+    box-shadow: 0rem, 0.06rem, 0.25rem, rgba(2,4,80,0.2);
+}
+.play:hover{                                                            /* Hover de los botones de play         */
+    background-color: #A4A4A7;
+    box-shadow: 0rem, 0.25rem, 1.5rem, rgba(0,0,0,0.16);
+}
+
+.bnw{                                                                   /* Botones trailer y groupwatch:        */
+    background-color: #1A1D29;
+    color: #ffffff;
+    border: 0.5px solid #FBFBF9;
+    border-radius: 3px;                                        /* Tienen este nombre de clase por estar en blanco y negro.    */                                        
+    padding: 0.5rem;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+    box-shadow: 0rem, 0.06rem, 0.25rem, rgba(2,4,80,0.2);
+}
+.bnw:hover{                                                              /* Hover de los botones blanco y negro  */
+    background-color: #FAF8FC;
+    color: #040408;
+    border: 0.5px solid #FBFBF9;
+    border-radius: 3px;
+}
+
+
+
+    
